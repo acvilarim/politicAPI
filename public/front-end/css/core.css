@@ -1,0 +1,43 @@
+.candidatos img {
+	width: 80px
+}
+.candidato {
+	margin-bottom: 30px;
+	color: #34495e;
+	text-shadow: none;
+	background-color: #eceef0;
+	border: 1px solid #ebece8;
+	font-size: 16px;
+	line-height: 1.53875em;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 10px;
+	text-align: center;
+}
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	width: 220px;
+	height: 100%;
+	margin-top: -20px;
+	padding: 40px 30px 30px 30px;
+}
+
+.navbar-inner {
+	border-radius: 0;
+}
+
+body {
+	background-color: #34495e;
+}
+.main {
+	padding: 20px;
+}
+
+.dropdown-menu li:first-child a{
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
