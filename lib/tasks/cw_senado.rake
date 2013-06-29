@@ -16,21 +16,18 @@ namespace :cw_senado do
     status['Parlamentares'][0]['Parlamentar'].each do |parlamentar|
 
       pol = Politico.new 
-      pol.nome = parlamentar['NomeCompleto'][0]
-      pol.sexo = parlamentar['NomeCompleto'][0]
-      pol.email = parlamentar['NomeCompleto'][0]
-      pol.data_nascimento = parlamentar['NomeCompleto'][0]
-      pol.uf_nascimento = parlamentar['NomeCompleto'][0]
-      pol.foto = parlamentar['NomeCompleto'][0]
+      pol.nome = Politico.clean_content parlamentar['NomeCompleto']
+      pol.sexo = Politico.clean_content parlamentar['Sexo']
+      pol.email = Politico.clean_content parlamentar['EnderecoEletronico']
+      pol.data_nascimento = Politico.clean_content parlamentar['DataNascimento']
+      pol.uf_nascimento = Politico.clean_content parlamentar['SiglaUfNatural']
+      pol.foto = Politico.clean_content parlamentar['Foto']
+      pol.contato = {
+        endereco: Politico.clean_content(parlamentar['EnderecoParlamentar']),
+        telefone: Politico.clean_content(parlamentar['TelefoneParlamentar'])
+      }
 
-
-      # pol.contato =
-
-      # pol.save
-
-      puts pol.inspect
-
-
+      pol.save
 
       # agent.get('http://www.senado.gov.br/senadores/dinamico/paginst/senador' + parlamentar['CodigoParlamentar'][0] + 'a.asp')
       # doc = Nokogiri::HTML(agent.current_page.body)
