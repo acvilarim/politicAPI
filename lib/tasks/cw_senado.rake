@@ -8,7 +8,6 @@ namespace :cw_senado do
   desc "base_info"
   task base_info: :environment do
     agent = Mechanize.new
-
     agent.get('http://legis.senado.gov.br/dadosabertos/senador/lista/atual')
 
     xml = agent.current_page.body
