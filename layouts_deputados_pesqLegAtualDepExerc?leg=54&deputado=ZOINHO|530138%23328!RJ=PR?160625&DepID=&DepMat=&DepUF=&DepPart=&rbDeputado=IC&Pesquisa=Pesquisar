@@ -1,0 +1,868 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br"
+      lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8" />
+    <!-- Internet Explorer fix, forces IE8 into newest possible rendering
+         engine even if it's on an intranet. This has to be defined before any
+         script/style tags. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<style type="text/css">@import url(/internet/biblioteca/js/smoothness/ui.all.css);</style>
+	<script type="text/javascript" src="/internet/biblioteca/js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="/internet/biblioteca/js/ui/jquery-ui-1.6.custom.js"></script>
+	<script type="text/javascript" src="/internet/biblioteca/js/ui/ui.core.js"></script>
+	<script type="text/javascript" src="/internet/biblioteca/js/ui/ui.datepicker.js"></script>
+	<script type="text/javascript" src="/internet/biblioteca/js/ui/i18n/ui.datepicker-pt-BR.js"></script>
+	<script type="text/javascript" src="/internet/biblioteca/js/jquery.maskedinput-1.2.2.min.js"></script>   
+    <script language="javascript1.2" type="text/javascript" src="/Internet/biblioteca/script/dominio.js"> </script>        
+
+    
+		<script type="text/javascript" src="http://www2.camara.leg.br/portal_javascripts/GoogleAnalyticsTracker.js"></script>
+		<style type="text/css">@import url(http://www2.camara.leg.br/ploneExterno.css);</style>
+		
+		<!--
+	    <script type="text/javascript"
+                  	src="http://www2.camara.leg.br/portal_javascripts/mensagemSaida.js"> 
+        </script> 
+        -->
+
+        
+    <!-- IE6 workaround CSS/JS  -->
+    <!--[if lte IE 7]>
+        <style type="text/css" media="all">@import url(http://www2.camara.leg.br/IEFixes.css);</style>        
+        <script type="text/javascript"
+                src="http://www2.camara.leg.br/iefixes.js"> </script>
+        <script type="text/javascript"
+                src="http://www2.camara.leg.br/menuForIE6.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon"
+          href="http://www2.camara.leg.br/favicon.ico" />
+    <link rel="home" href="http://www2.camara.leg.br"
+          title="Página inicial" />
+    <link rel="contents"
+          href="http://www2.camara.leg.br/sitemap"
+          title="Mapa do Site" />
+    <link rel="search"
+          href="http://www2.camara.leg.br/busca"
+          title="Search this site" />
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+	
+<title>Deputado ZOINHO - C&acirc;mara dos Deputados</title>
+
+<link rel="stylesheet" type="text/css" href="deputados.css" />
+
+
+ 
+  <script type="text/javascript">
+	$(function() {    
+    $("#portlet-menu .grupo").toggle(function(){
+        $(this).addClass("fechado");
+        }, function () {
+        $(this).removeClass("fechado");
+    });
+    $("#portlet-menu .grupo").click(function(){
+        $(this).next("ul").slideToggle("slow");
+    });
+});
+</script>
+
+  </head>
+  <body dir="ltr">
+    <div id="visual-portal-wrapper">
+      <div id="portal-top">
+ 
+        <div id="portal-header">
+			<p class="hiddenStructure">
+			  <a accesskey="2"
+			     href="#documentContent">Ir para o conteúdo.</a> |
+			 
+			  <a accesskey="6"
+			     href="#portlet-navigation-tree">Ir para a navegação</a>
+			</p>
+			 
+			<a id="portal-logo" accesskey="1"
+			   href="http://www2.camara.leg.br">
+			    <img src="http://www2.camara.leg.br/logo.jpg" alt="" title="" height="33" width="285" /></a>
+		 
+			<ul id="portal-siteactions">
+				<li class="faq" id="siteaction-faq">
+    					<a href="http://www2.camara.leg.br/participe/fale-conosco/perguntas-frequentes" accesskey="" title="Ir para Perguntas Frequentes">
+        					<span class="hiddenStructure">Perguntas Frequentes</span>
+      						<img width="26" height="26" src="http://www2.camara.leg.br/ico_topo_faq.png" alt="Perguntas Frequentes" title="Perguntas Frequentes">
+    					</a>
+  </li>
+						    
+			    <li class="contact" id="siteaction-contact">
+  				 	<a href="http://www2.camara.leg.br/participe/fale-conosco?contexto=" class="visualNoPrint" accesskey="9" title="Fale Conosco">
+   				 <img src="http://www2.camara.leg.br/ico_topo_faleconosco.png" width="26" height="26" alt="Fale conosco"/>
+   				</a>   
+  				</li>
+        		<li class="senado" id="siteaction-senado">
+        			 <a href="http://www.senado.gov.br" class="visualNoPrint" accesskey="" title="Ir para o Senado Federal">
+    				<img src="http://www2.camara.leg.br/ico_topo_senado.png" width="26" height="26" alt="Senado"/>
+   				</a>
+        		</li>
+  				<li class="tcu" id="siteaction-tcu">
+  					<a href="http://www.tcu.gov.br" class="visualNoPrint" accesskey="" title="Ir para o TCU - Tribunal de Contas da União">
+   				 <img src="http://www2.camara.leg.br/ico_topo_tcu.png" width="26" height="26" alt="TCU"/>
+  					 </a>
+ 				 </li>
+			</ul>
+	 
+ 
+			<div id="portal-searchbox">
+			    <form name="busca"
+			          action="http://www2.camara.leg.br/busca">
+			 
+			        <label for="searchGadget" class="hiddenStructure">Busca</label>
+			 
+			        <div class="LSBox">
+			        <input name="q" type="text" size="18"
+			               title="Buscar no Site" accesskey="4"
+			               class="inputLabel" id="searchGadget" />
+			 
+			        <input class="imagedButton" type="image"
+			               value="Buscar"
+			               src="http://www2.camara.leg.br/btn_pesquisar_topo.gif"
+			               alt="Submeta sua busca" />
+			    
+			    </div></form>
+			</div>
+ 
+			<ul id="accessibility-buttons" class="visualNoPrint">
+				<li><a href="javascript:setBaseFontSize('smallText',1);"><img
+			    width="25" height="25"
+			    alt="Retorne o texto ao tamanho normal"
+			    src="http://www2.camara.leg.br/btn_a_menos_topo.gif" /></a></li>
+				<li><a href="javascript:setBaseFontSize('largeText', 1);"><img
+			    width="25" height="25" alt="Aumente o tamanho do texto"
+			    src="http://www2.camara.leg.br/btn_a_mais_topo.gif" /></a></li>
+			</ul>
+			<h2 class="hiddenStructure">Navega&ccedil;&atilde;o Global</h2>
+			<ul id="portal-globalnav" class="clearedBox">
+				<li class="">
+			     <h3><a href="#" onclick="return false;">A Câmara</a></h3>
+		        <ul class="submenu multicolumn">
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/altosestudos">Centro de Estudos e Debates Estratégicos</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/conheca">Conheça a Câmara</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/eticaedecoro">Conselho de Ética e Decoro Parlamentar</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/estruturaadm">Estrutura Administrativa</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/mesa">Mesa Diretora</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/ouvidoria">Ouvidoria Parlamentar</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/presidencia">Presidência</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/procuradoriadamulher">Procuradoria da Mulher</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/procuradoria-parlamentar">Procuradoria Parlamentar</a>
+		            </li>
+		            <li>
+		                <a href="http://www2.camara.leg.br/a-camara/programas-institucionais">Programas Institucionais</a>
+		            </li>
+		
+		
+		        </ul>
+				</li>
+				<li class="selected">
+					<h3><a href="#" onclick="return false;">Deputados</a></h3>
+						<ul class="submenu multicolumn">
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/deputados/pesquisa">Conheça os Deputados</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/deputados/discursos-e-notas-taquigraficas">Discursos e Notas Taquigráficas</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/deputados/frentes-parlamentares">Frentes Parlamentares</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/deputados/historico-de-movimentacao-parlamentar">Histórico de Movimentação Parlamentar</a>
+		                  </li>
+     				   <li>
+                        <a href="http://www2.camara.leg.br/deputados/intercambio-parlamentar">Intercâmbio Parlamentar</a>
+	                       </li>			          
+		                  
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/deputados/liderancas-e-bancadas">Lideranças e Bancadas</a>
+		                  </li>
+
+
+		              </ul>				</li>
+				<li class="">
+					     <h3><a href="#" onclick="return false;">Atividade Legislativa</a></h3>
+					              <ul class="submenu multicolumn">
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/agenda">Agenda</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/comissoes">Comissões</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/processolegislativo">Conheça o Processo Legislativo</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/legislacao">Legislação</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/orcamentobrasil">Orçamento Brasil</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/plenario">Plenário</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/projetos-de-lei-e-outras-proposicoes">Projetos de Lei e Outras Proposições</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/atividade-legislativa/webcamara">WebCâmara</a>
+					                  </li>
+			 
+			 
+					              </ul>
+					 </li>
+						<li class="">
+					     <h3><a href="#" onclick="return false;">Documentos e Pesquisa</a></h3>
+					              <ul class="submenu multicolumn">
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/documentos-e-pesquisa/biblioteca-digital">Biblioteca Digital</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/documentos-e-pesquisa/biblarq">Biblioteca e Arquivo</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/documentos-e-pesquisa/fiquePorDentro">Fique por Dentro</a>
+					                  </li>
+					                  <li>
+					                      <a href="http://www2.camara.leg.br/documentos-e-pesquisa/publicacoes">Publicações e Estudos</a>
+					                  </li>
+			 
+			 
+					              </ul>
+					 </li>
+						<li class="">
+
+						<h3><a onclick="return false;" href="#">Comunicação</a></h3>					       
+						<ul class="submenu multicolumn">
+                            <li>
+                                <a href="http://www2.camara.gov.br/comunicacao/assessoria-de-imprensa">Assessoria de Imprensa</a>
+                            </li>
+                            <li>
+                                <a href="http://www.camara.leg.br/internet/bancoimagem">Banco de Imagens</a>
+                            </li>
+                            <li>
+                                <a href="http://www2.camara.leg.br/comunicacao/camara-noticias">Câmara Notícias</a>
+                            </li>
+                            <li>
+                                <a href="http://www2.camara.gov.br/comunicacao/institucional">Institucional</a>
+                            </li>
+                            <li>
+                                <a href="http://www2.camara.gov.br/comunicacao/jornal-da-camara">Jornal da Câmara</a>
+                            </li>
+                            <li>
+                                <a href="http://www2.camara.gov.br/comunicacao/radio-camara">Rádio Câmara</a>
+                            </li>
+                            <li>
+                                <a href="http://www2.camara.gov.br/comunicacao/tv-camara">TV Câmara</a>
+                            </li>
+						</ul>                
+
+					 </li>
+						<li class="">
+					     <h3><a href="#" onclick="return false;">Transparência</a></h3>
+						<ul class="submenu multicolumn">
+
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/a-transparencia-na-camara">A Transparência na Câmara</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/acompanhe-seu-deputado">Acompanhe seu Deputado</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/concursos">Concursos</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar">Cota para Exercício da Atividade Parlamentar</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/dados-abertos">Dados Abertos</a>
+		                  </li>
+		                  <li>
+			              <a href="http://www2.camara.leg.br/transparencia/fiscalize">Fiscalize o Orçamento</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/gestao-na-camara-dos-deputados">Gestão na Câmara dos Deputados</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/imoveis-funcionais">Imóveis Funcionais e Auxílio-Moradia</a>
+    				  </li>
+				  <li>
+				      <a href="http://www2.camara.leg.br/transparencia/lei-de-acesso-a-informacao">Lei de Acesso à Informação</a>
+				  </li>
+				  <li>
+				      <a href="http://www2.camara.leg.br/transparencia/licitacoes">Licitações e Contratos</a>
+				  </li>
+				  <li><a href="http://www2.camara.leg.br/transparencia/obras-em-andamento">Obras em Andamento</a>
+				  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/recursos-humanos">Recursos Humanos</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/viagens-em-missao-oficial">Viagens em Missão Oficial</a>
+		                  </li>
+
+
+		              
+		              </ul>
+					 </li>
+						<li class="">
+					     <h3><a href="#" onclick="return false;">Responsabilidade Social</a></h3>
+						<ul class="submenu multicolumn">
+
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/a-pratica-na-camara">A prática na Câmara</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/acessibilidade">Acessibilidade</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/bosque-dos-constituintes">Bosque dos Constituintes</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/ecocamara">EcoCâmara</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/edulegislativa">Educação Legislativa e Estágios</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/parlamentojovem">Parlamento Jovem</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/plenarinho">Plenarinho</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/responsabilidade-social/programa-pro-adolescente">Programa Pró-Adolescente</a>
+		                  </li>
+
+
+		              
+		              </ul>					 </li>
+						<li class="ultimo ">
+					     <h3><a href="#" onclick="return false;">Participe</a></h3>
+						<ul class="submenu multicolumn">
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/foruns-e-bate-papo">Bate-Papos</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/e-democracia">Debates no e-Democracia</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/fale-com-a-ouvidoria">Fale com a Ouvidoria</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/fale-com-o-deputado">Fale com o Deputado</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/fale-conosco">Fale Conosco</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/redes-sociais">Redes Sociais</a>
+		                  </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/participe/sua-proposta-pode-virar-lei">Sua proposta pode virar Lei</a>
+		                  </li>
+
+
+		              </ul>
+					 </li>
+			</ul>
+			<img src="http://www2.camara.leg.br/imagens-topo/img_topo_padrao.jpg" title="" class="visualNoPrint" id="imgTopo" alt="" />
+			</div> <!-- portal-header //-->
+			
+			<div id="portal-breadcrumbs">
+			 
+			    <span id="breadcrumbs-you-are-here">Você está aqui:</span>
+			    <a href="http://www2.camara.leg.br">Página Inicial</a>
+			    <span class="breadcrumbSeparator">
+			        &gt;
+			        
+			    </span>
+			    <a href="http://www2.camara.gov.br/deputados">Deputados</a> &gt; <a href="http://www2.camara.gov.br/deputados/pesquisa">Conhe&ccedil;a os Deputados</a> &gt; Informa&ccedil;&otilde;es Completas
+		</div> <!-- portal-breadcrumbs // -->
+ 
+		<div id="portal-mainsection">
+			
+			<h2>
+	            Deputado ZOINHO
+            </h2>
+
+		</div>
+ 
+      </div> <!-- portal-top // -->
+  
+      <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
+      <div id="portal-columns">
+			    
+
+			<div id="portal-column-content">
+				<div id="portal-content-wrapper">
+					<div id="region-content" class="documentContent">
+						<div id="content">
+					
+								
+					
+								<div class="bloco fundoMapa RJ">
+								
+									<div class="bloco clearedBox">
+										<h3 class="documentFirstHeading">Informa&ccedil;&otilde;es do deputado</h3>
+										
+                                        <!--<img src="/internet/deputado/fotos/160625.jpg" alt="Foto do deputado ZOINHO" class="image-left" />-->
+                                        
+										
+										<img src="http://www.camara.gov.br/internet/deputado/bandep/160625.jpg" border=0 alt="Foto do Deputado ZOINHO" class="image-left" width="114px" height="150px">
+										<!--img src="http://www2.camara.gov.br/deputados/pesquisa/ws_layouts_deputados_fotoBiograf?id=160625" title="Foto do deputado ZOINHO" class="image-left" width="114px" height="150px" / -->
+                                        
+										<ul class="visualNoMarker">
+											<li><strong>Nome civil:</strong> JORGE DE OLIVEIRA</li>
+											<li><strong>Anivers&aacute;rio:</strong> 15 / 12 - <strong>Profiss&atilde;o:</strong> </li>
+											<li><strong>Partido/UF:</strong> PR / RJ / Titular</li>
+											<li><strong>Telefone:</strong> (61) 3215-5619 - <strong>Fax:</strong> 3215-2619</li>
+
+											<li><strong>Legislaturas:</strong> 11/15 </li>
+											<li><a href="http://www2.camara.gov.br/deputados/pesquisa/layouts_deputados_biografia?pk=160625" title="Biografia do Deputado ZOINHO" >Biografia</a> </li>
+
+											
+											<li><a href="http://www2.camara.gov.br/participe/fale-conosco/fale-com-o-deputado?DepValores=530138-RJ-M-PR&partidoDeputado=PR&sexoDeputado=M&ufDeputado=RJ" title="">Fale com o deputado</a></li>
+											
+										</ul>
+										<img src="img/partidos/PR.gif" alt="PR" class="rightPositioned distanciado1 distancia-somente-direita" />
+									</div>
+									
+									<div class="grid visualClear">
+										<h3 class="headSessao-1">Minhas informa&ccedil;&otilde;es na C&acirc;mara</h3>
+										
+										<div class="grid-line">
+											<div class="grid-cell size1of3">
+												<div>
+													<ul class="size2of3 centralizar visualNoMarker"> 
+														<li><a href="http://www.camara.gov.br/internet/sileg/Prop_lista.asp?Autor=530138&Limite=N" title="Projetos de sua autoria" accesskey="">Projetos de sua autoria</a></li>
+														<li><a href="http://www.camara.gov.br/internet/sileg/Prop_Lista.asp?Relator=530138&Limite=N&Matricula=328" title="Projetos relatados" accesskey="">Projetos relatados</a></li>
+														<!--http://www2.camara.gov.br/transparencia/cota-para-exercicio-da-atividade-parlamentar/verba_indenizatoria_retPesquisaDep? -->
+											
+														<li><a href="http://www.camara.gov.br/cota-parlamentar/verba_indenizatoria_retPesquisaDep?listaDep=ZOINHO|PR|RJ" title="Cota parlamentar" accesskey="">Cota parlamentar</a></li>
+														<li>
+															<A HREF="http://www.camara.gov.br/internet/sitaqweb/DiscursosDeputado.asp?txOrador=ZOINHO&Campoordenacao=dtSessao&tipoordenacao=DESC&Pagesize=20
+															
+																		&txUF=RJ
+															" >Discursos em plen&aacute;rio</A>
+														</li>
+														
+														<li><a class="depLink" href="http://www2.camara.gov.br/atividade-legislativa/webcamara/resultadoDep?dep=ZOINHO" title="">V&iacute;deos</a></li>
+                                                        <li><a class="depLink" href="http://imagem.camara.gov.br/internet/audio/lista.asp?numLegislatura=54-&txtDt1=01/02/2011&txtDt2=31/01/2015&txtOrador=ZOINHO" title="">&Aacute;udios</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="grid-cell size1of3">
+												<div class="bordaEsquerda">
+													<ul class="size2of3 centralizar visualNoMarker">
+							
+														<li>Titular das Comiss&otilde;es<br />
+														<acronym title='Comissão de Viação e Transportes'>CVT</acronym>, <acronym title='Comissão Especial destinada a acompanhar a aplicação das seguintes Leis de Anistia: Lei nº 8878/1994, que "dispõe sobre a concessão de anistia"; Lei nº 10.790/2003, que "concede anistia a dirigentes ou representantes sindicais e trabalhadores punidos por participação em movimento reivindicatório"; Lei nº 11.282/2006, que "anistia os trabalhadores da Empresa Brasileira de Correios e Telégrafos-ECT punidos em razão da participação em movimento grevista"; e Lei nº 10.559/2002, que "regulamenta o artigo 8º do Ato das Disposições Constitucionais Transitórias e dá outras providências"'>CEANISTI</acronym>, <acronym title='Comissão Especial destinada a proferir parecer à Proposta de Emenda à Constituição nº 339-A, de 2009,  do Sr. Vicentinho, que "altera a redação do § 3º do art. 39 e do § 1º do art. 42 da Constituição Federal " (assegura o direito ao adicional noturno aos policiais militares, bombeiros militares e aos integrantes dos órgãos de segurança pública)'>PEC33909</acronym>, <acronym title='Comissão Externa, com ônus para esta Casa, objetivando visitar a região serrana do Rio de Janeiro, para averiguar os danos sociais, ambientais e econômicos, decorrentes das enchentes, inundações e desmoronamentos, bem como verificar as providências que estão sendo tomadas no sentindo de atender as populações afetadas'>CEXDEST</acronym>.
+														
+														</li>
+														<li>Suplente das Comiss&otilde;es<br />
+														<acronym title='Comissão de Fiscalização Financeira e Controle'>CFFC</acronym>, <acronym title='Comissão de Minas e Energia'>CME</acronym>.
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="grid-cell size1of3 last-cell">
+												<div class="bordaEsquerda">
+													<ul class="size2of3 centralizar visualNoMarker">
+														<li>Vota&ccedil;&otilde;es<br />
+														<A HREF="http://www.camara.gov.br/internet/deputado/RelVotacoes.asp?nuLegislatura=54&nuMatricula=328&dtInicio=01/01/2011&dtFim=29/06/2013" title="Votações em 2011" >2011</A>, <A HREF="http://www.camara.gov.br/internet/deputado/RelVotacoes.asp?nuLegislatura=54&nuMatricula=328&dtInicio=01/01/2012&dtFim=29/06/2013" title="Votações em 2012" >2012</A>, <A HREF="http://www.camara.gov.br/internet/deputado/RelVotacoes.asp?nuLegislatura=54&nuMatricula=328&dtInicio=01/01/2013&dtFim=29/06/2013" title="Votações em 2013" >2013</A>
+														
+														</li>
+														<li>
+														Presen&ccedil;a em Comiss&otilde;es<br /> 
+														
+														<A HREF="http://www.camara.gov.br/internet/deputado/RelPresencaComissoes.asp?nuLegislatura=54&id=530138&dtInicio=01/01/2011&dtFim=29/06/2013 " title="Presença em Comissões ano 2011" >2011</A>, <A HREF="http://www.camara.gov.br/internet/deputado/RelPresencaComissoes.asp?nuLegislatura=54&id=530138&dtInicio=01/01/2012&dtFim=29/06/2013 " title="Presença em Comissões ano 2012" >2012</A>, <A HREF="http://www.camara.gov.br/internet/deputado/RelPresencaComissoes.asp?nuLegislatura=54&id=530138&dtInicio=01/01/2013&dtFim=29/06/2013 " title="Presença em Comissões ano 2013" >2013</A>
+														</li>
+														
+														<li>
+														Presen&ccedil;a em Plen&aacute;rio<br />
+														<A HREF="http://www.camara.gov.br/internet/deputado/RelPresencaPlenario.asp?nuLegislatura=54&nuMatricula=328&dtInicio=01/01/2011&dtFim=30/12/2011" title="Presena em Plenrio ano 2011" >2011</A>, <A HREF="http://www.camara.gov.br/internet/deputado/RelPresencaPlenario.asp?nuLegislatura=54&nuMatricula=328&dtInicio=01/01/2012&dtFim=30/12/2012" title="Presena em Plenrio ano 2012" >2012</A>, <A HREF="http://www.camara.gov.br/internet/deputado/RelPresencaPlenario.asp?nuLegislatura=54&nuMatricula=328&dtInicio=01/01/2013&dtFim=29/06/2013" title="Presena em Plenrio ano 2013" >2013</A>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									
+									<div class="bloco clearedBox">
+										<h3 class="headSessao-1">Endere&ccedil;o para correspond&ecirc;ncia</h3>
+										<ul class="visualNoMarker">
+											<li>Pra&ccedil;a dos Tr&ecirc;s Poderes - C&acirc;mara dos Deputados</li>
+											<li>
+											
+											            
+												Gabinete: 619 - Anexo: IV&nbsp;<br>
+											
+											
+											</li>
+											<li>CEP: 70160-900 - Bras&iacute;lia - DF</li>
+											
+												<li><a href="mailto:dep.zoinho@camara.leg.br" title="">dep.zoinho@camara.leg.br</a></li>
+											
+										</ul>
+									</div>
+									
+								</div>
+							
+						</div> <!-- content //-->
+					</div> <!-- documentContent //-->
+				</div> <!-- portal-content-wrapper //-->
+			</div> <!-- portal-column-content //-->
+			
+			
+	
+      </div> <!-- portal-columns -->
+      <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
+<h2 class="hiddenStructure">Informa&ccedil;&otilde;es de Apoio </h2>
+<div id="portal-opennav" class="visualNoPrint"><a accesskey="3" name="sitemap-region" href="#sitemap-region" class="hiddenStructure">Mapa do Portal</a>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>A Câmara</span>
+			  
+			      <ul class="submenu">
+	                  <li>
+	                      <a href="http://www2.camara.leg.br/a-camara/altosestudos">Centro de Estudos e Debates Estratégicos</a>
+	                  </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/conheca">Conheça a Câmara</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/eticaedecoro">Conselho de Ética e Decoro Parlamentar</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/estruturaadm">Estrutura Administrativa</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/mesa">Mesa Diretora</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/ouvidoria">Ouvidoria Parlamentar</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/presidencia">Presidência</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/procuradoriadamulher">Procuradoria da Mulher</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/procuradoria-parlamentar">Procuradoria Parlamentar</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/a-camara/programas-institucionais">Programas Institucionais</a>
+			          </li>
+
+
+			      </ul>
+					  
+
+			  
+		 </li>
+	</ul>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>Deputados</span>
+			  
+			      <ul class="submenu">
+			          <li>
+			              <a href="http://www2.camara.leg.br/deputados/pesquisa">Conheça os Deputados</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/deputados/discursos-e-notas-taquigraficas">Discursos e Notas Taquigráficas</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/deputados/frentes-parlamentares">Frentes Parlamentares</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/deputados/historico-de-movimentacao-parlamentar">Histórico de Movimentação Parlamentar</a>
+			          </li>
+					<li>
+                        <a href="http://www2.camara.leg.br/deputados/intercambio-parlamentar">Intercâmbio Parlamentar</a>
+	                    </li>			          
+			          <li>
+			              <a href="http://www2.camara.leg.br/deputados/liderancas-e-bancadas">Lideranças e Bancadas</a>
+			          </li>
+
+
+			      </ul>
+					  
+
+			  
+		 </li>
+	</ul>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>Atividade Legislativa</span>
+			  
+			      <ul class="submenu">
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/agenda">Agenda</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/comissoes">Comissões</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/processolegislativo">Conheça o Processo Legislativo</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/legislacao">Legislação</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/orcamentobrasil">Orçamento Brasil</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/plenario">Plenário</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/projetos-de-lei-e-outras-proposicoes">Projetos de Lei e Outras Proposições</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/atividade-legislativa/webcamara">WebCâmara</a>
+			          </li>
+			      </ul>
+					  
+
+			  
+		 </li>
+	</ul>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>Documentos e Pesquisa</span>
+			  
+			      <ul class="submenu">
+			          <li>
+			              <a href="http://www2.camara.leg.br/documentos-e-pesquisa/biblioteca-digital">Biblioteca Digital</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/documentos-e-pesquisa/biblarq">Biblioteca e Arquivo</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/documentos-e-pesquisa/fiquePorDentro">Fique por Dentro</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/documentos-e-pesquisa/publicacoes">Publicações e Estudos</a>
+			          </li>
+			      </ul>
+					  
+
+			  
+		 </li>
+	</ul>
+	<ul>
+        <li class="grupo">
+            <span>Comunicação</span>                
+            <ul class="submenu">
+                <li>
+                    <a href="http://www2.camara.gov.br/comunicacao/assessoria-de-imprensa">Assessoria de Imprensa</a>
+                </li>
+                <li>
+                    <a href="http://www.camara.leg.br/internet/bancoimagem">Banco de Imagens</a>
+                </li>
+                <li>
+                    <a href="http://www2.camara.leg.br/comunicacao/camara-noticias">Câmara Notícias</a>
+                </li>
+                <li>
+                    <a href="http://www2.camara.gov.br/comunicacao/institucional">Institucional</a>
+                </li>
+                <li>
+                    <a href="http://www2.camara.gov.br/comunicacao/jornal-da-camara">Jornal da Câmara</a>
+                </li>
+                <li>
+                    <a href="http://www2.camara.gov.br/comunicacao/radio-camara">Rádio Câmara</a>
+                </li>
+                <li>
+                    <a href="http://www2.camara.gov.br/comunicacao/tv-camara">TV Câmara</a>
+                </li>
+            </ul>             
+        </li>
+	</ul>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>Transparência</span>
+			  
+			      <ul class="submenu">
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/a-transparencia-na-camara">A Transparência na Câmara</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/acompanhe-seu-deputado">Acompanhe seu Deputado</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/concursos">Concursos</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/cota-para-exercicio-da-atividade-parlamentar">Cota para Exercício da Atividade Parlamentar</a>
+			          </li>
+		              <li>
+		                  <a href="http://www2.camara.leg.br/transparencia/dados-abertos">Dados Abertos</a>
+		              </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/fiscalize">Fiscalize o Orçamento</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/gestao-na-camara-dos-deputados">Gestão na Câmara dos Deputados</a>
+			          </li>
+		                  <li>
+		                      <a href="http://www2.camara.leg.br/transparencia/imoveis-funcionais">Imóveis Funcionais e Auxílio-Moradia</a>
+    				  </li>
+			          
+			         <li>
+				      <a href="http://www2.camara.leg.br/transparencia/lei-de-acesso-a-informacao">Lei de Acesso à Informação</a>
+				  </li>
+				  <li>
+				      <a href="http://www2.camara.leg.br/transparencia/licitacoes">Licitações e Contratos</a>
+				  </li>
+				  <li><a href="http://www2.camara.leg.br/transparencia/obras-em-andamento">Obras em Andamento</a>
+				  </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/recursos-humanos">Recursos Humanos</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/transparencia/viagens-em-missao-oficial">Viagens em Missão Oficial</a>
+			          </li>
+
+
+			      </ul>
+					  
+
+			  
+		 </li>
+	</ul>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>Responsabilidade Social</span>
+			  
+			      <ul class="submenu">
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/a-pratica-na-camara">A prática na Câmara</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/acessibilidade">Acessibilidade</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/bosque-dos-constituintes">Bosque dos Constituintes</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/ecocamara">EcoCâmara</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/edulegislativa">Educação Legislativa e Estágios</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/parlamentojovem">Parlamento Jovem</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/plenarinho">Plenarinho</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/responsabilidade-social/programa-pro-adolescente">Programa Pró-Adolescente</a>
+			          </li>
+
+
+			      </ul>
+					  
+
+			  
+		 </li>
+	</ul>
+	<ul>                                                     
+		 <li class="grupo">
+		     <span>Participe</span>
+			      <ul class="submenu">
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/foruns-e-bate-papo">Bate-Papos</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/e-democracia">Debates no e-Democracia</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/fale-com-a-ouvidoria">Fale com a Ouvidoria</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/fale-com-o-deputado">Fale com o Deputado</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/fale-conosco">Fale Conosco</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/redes-sociais">Redes Sociais</a>
+			          </li>
+			          <li>
+			              <a href="http://www2.camara.leg.br/participe/sua-proposta-pode-virar-lei">Sua proposta pode virar Lei</a>
+			          </li>
+			      </ul>
+		 </li>
+	</ul>
+	<div class="visualClear"><!-- --></div>
+</div>
+      <div id="portal-footer">
+		<address>
+			<p><span class="visualStrong">54ª Legislatura - 3ª Sessão Legislativa Ordinária</span><br />
+			Palácio do Congresso Nacional - Praça dos Três Poderes - Brasília - DF - CEP 70160-900<br />
+			CNPJ 00.530.352/0001-59<br />
+			Telefone: +55 (61) 3216-0000 | Disque Câmara: 0800 619 619</p>
+		</address>
+		<div id="portal-utilities">
+
+		<ul>
+					<li>
+						<a href="http://www2.camara.leg.br/accessibility-info" accesskey="0">Acessibilidade</a></li>
+					<li>
+						<a href="http://www2.camara.leg.br/english">English</a></li>
+					<li>
+						<a href="http://www2.camara.leg.br/espanol">Español</a></li>
+					<li>
+						<a href="https://camaranet.camara.leg.br">Extranet</a></li>
+					<li>
+						<a href="https://www2.camara.leg.br/participe/fale-conosco/perguntas-frequentes">Perguntas Frequentes</a></li>
+					<li>
+						<a href="http://www2.camara.leg.br/participe/fale-conosco">Fale Conosco </a></li>
+					<li>
+						<a href="http://www2.camara.leg.br/glossario">Glossario</a></li>
+					<li class="ultimo">
+						<a href="http://www2.camara.leg.br/sobre-o-portal">Sobre o Portal</a></li>
+					
+  			
+  			<li id="acessoProvedor"><a title="Autenticar-se no site" href="http://www2.camara.leg.br/login_form"><img alt="Autenticar-se no site" src="http://www2.camara.leg.br/ico_cadeado.jpg" /></a></li>
+		</ul>
+
+		 
+		</div>
+	 
+	 
+	  </div>
+      <div class="visualClear"><!-- --></div>
+    </div> <!-- visual-portal-wrapper -->
+
+</body>
+</html>
+
