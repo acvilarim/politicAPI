@@ -121,6 +121,7 @@ GEM
       unf_ext
     unf_ext (0.0.6)
     webrobots (0.1.1)
+    xml-simple (1.1.2)
 
 PLATFORMS
   ruby
@@ -133,3 +134,4 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
+  xml-simple
