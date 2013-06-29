@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130629212922) do
+ActiveRecord::Schema.define(:version => 20130629222904) do
+
+  create_table "mandatos", :force => true do |t|
+    t.string   "tipo"
+    t.string   "partido"
+    t.string   "uf"
+    t.string   "nome_parlamentar"
+    t.integer  "ano"
+    t.string   "codigo"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "politico_id"
+  end
 
   create_table "politicos", :force => true do |t|
     t.string   "nome"

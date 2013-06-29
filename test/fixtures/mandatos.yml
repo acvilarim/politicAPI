@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tipo: MyString
+  partido: MyString
+  uf: MyString
+  nome_parlamentar: MyString
+  ano: 1
+  codigo: MyString
+
+two:
+  tipo: MyString
+  partido: MyString
+  uf: MyString
+  nome_parlamentar: MyString
+  ano: 1
+  codigo: MyString

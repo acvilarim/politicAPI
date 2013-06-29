@@ -30,6 +30,21 @@ namespace :cw_senado do
 
       pol.save
 
+      man = Mandato.new
+      man.politico = pol
+      man.tipo = 'senador'
+      man.ano = Politico.get_ano parlamentar['MandatoAtual']
+      man.codigo = Politico.clean_content parlamentar['CodigoParlamentar']
+      man.partido = Politico.clean_content parlamentar['SiglaPartido']
+      man.uf = Politico.clean_content parlamentar['SiglaUf']
+      man.nome_parlamentar = Politico.clean_content parlamentar['NomeParlamentar']
+
+      man.save
+
+      puts man.inspect
+
+
+
       # agent.get('http://www.senado.gov.br/senadores/dinamico/paginst/senador' + parlamentar['CodigoParlamentar'][0] + 'a.asp')
       # doc = Nokogiri::HTML(agent.current_page.body)
       # puts doc.search('.dadosSenador').search('b').inspect
@@ -38,3 +53,4 @@ namespace :cw_senado do
 end
 
 # rails g model Politico nome:string sexo:string foto:string email:string data_nascimento:date uf_nascimento:string midia_social:string contato:string
+# rails g model Mandato tipo:string partido:string uf:string nome_parlamentar:string ano:integer codigo:string
