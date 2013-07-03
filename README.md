@@ -4,5 +4,5 @@ Aplicação com o objetivo de disponibilizar para a sociedade dados oficiais dos
 
 # Licença
 
-<img alt="Creative Commons License" style="border-width:0; display:block;" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" />
-Este trabalho está licenciado sob a licença [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/).
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">![Creative Commons License](http://i.creativecommons.org/l/by-nc/3.0/88x31.png)</a><br />
+Este trabalho está licenciado sob a [Creative Commons Attribution-NonCommercial 3.0 Unported License](http://creativecommons.org/licenses/by-nc/3.0/).
